@@ -1,0 +1,67 @@
+/* margin,bg color,font for entire page */
+body
+{
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f9f9f9;
+}
+
+/* styling  top header */
+header {
+  padding: 10px 30px;
+  background: #222;
+ 
+  text-align: center;
+}
+
+/* the one that says first website*/
+header h1 {
+  margin: 0;
+  font-size: 2;
+   color: #a75757;
+}
+
+/* the one that says yashish*/
+header p {
+  margin: 5px 0 0;
+    /* NOTE : 1 value: applies to all sides.
+              2 values: top/bottom | left/right.
+              3 values: top | left/right | bottom.
+              4 values: top | right | bottom | left. */
+
+
+  font-size: 2;
+  color: #8c02028c;
+}
+
+/* container holding the 3 sections side by side */
+.container {
+  display: flex;
+  width: 100%;
+}
+
+/* properties of each individual sections... */
+section {
+  flex: 1;
+  padding: 20px;
+  border: 2px solid #222;
+  background: #fff;
+  text-align: center;
+}
+
+h2 {
+  margin-bottom: 15px;
+  font-size: 2;
+}
+
+/* making image video and audio fit properly */
+img, video {
+  width: 100%;           /* scale to fit the section’s width */
+  height: auto;         /* adjust height automatically (basically keeping the proportions right) */
+  object-fit: contain; /* show entire media without cutting anything */
+}
+
+
+/*video, audio {
+  outline: none;
+}*/
