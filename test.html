@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CAFE MENU</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class= "bg-[#af6e4d]">
+    <header class="flex justify-center items-center rounded-xl bg-[#d2b48d] m-3 p-1 ">
+    <h1 class="text-[50px] text-[#f4f4db]  font-cafe">WEBPAGE CAFE</h1>
+    </header>
+
+    <section class="rounded-xl bg-[#bd8b65] p-6 m-3 text-center">
+      <h2 class="font-menu text-[80px] text-[#f4f4db] ">CaFE MENU</h2>
+      <p class=" font-cursive text-[#f4f4db] mt-2 text-xl">please enjoy !</p>
+    </section>
+
+    <section class="m-3 flex items-center justify-between rounded-2xl bg-[#e7d4ab] p-12 ">
+      <div class="w-2/3">
+        <h3 class="mb-4 text-3xl font-bold">Cold Drinks</h3>
+        <p class="mb-2 text-[#af6e4d] font-bold">Iced Coffee – ₹120</p>
+        <p class="mb-2 text-[#af6e4d] font-bold">Cold Brew – ₹150</p>
+        <p class="mb-2 text-[#af6e4d] font-bold">Iced Latte – ₹140</p>
+        <p class="mb-2 text-[#af6e4d] font-bold">Lemon Iced Tea – ₹90</p>
+        <p class="mb-2 text-[#af6e4d] font-bold">Fresh Lime Soda – ₹80</p>
+        <p class="mb-2 text-[#af6e4d] font-bold">Mango Smoothie – ₹160</p>
+
+      </div>
+      <div class="flex w-1/3 items-center justify-center">
+       
+         <img src="cold coffee.png"  class="h-full w-full object-cover" />
+        </div>
+    </section>
+
+     <section class="m-3 flex items-center justify-between rounded-2xl bg-[#f4f4db] p-12 ">
+      <div class="flex w-1/3 items-center justify-start">
+         <img src="teapot.png" class="h-full w-full object-cover" />
+        </div>
+        <div class="w-2/3 text-right m-3">
+        <h3 class="mb-4 text-3xl font-bold">Hot Drinks</h3>
+        <p class="mb-2 text-[#af6e4d] font-bold">Espresso – ₹100</p>
+        <p class="mb-2 text-[#af6e4d] font-bold">Cappuccino – ₹130</p>
+        <p class="mb-2 text-[#af6e4d] font-bold">Latte – ₹140</p>
+        <p class="mb-2 text-[#af6e4d] font-bold">Masala Chai – ₹60</p>
+        <p class="mb-2 text-[#af6e4d] font-bold">Hot Chocolate – ₹120</p>
+        <p class="mb-2 text-[#af6e4d] font-bold">Green Tea – ₹90</p>
+      </div>
+    
+    </section>
+
+    <section class="m-3 flex items-center justify-between rounded-2xl bg-[#cba271] p-12 shadow-lg">
+      <div class="w-2/3">
+        <h3 class="mb-4 text-3xl text-[#FFFFFF] font-bold">Snacks</h3>
+        <p class="mb-2 text-[#f4f4db] font-bold">Veg Sandwich – ₹110</p>
+        <p class="mb-2 text-[#f4f4db] font-bold">Cheese Garlic Bread – ₹90</p>
+        <p class="mb-2 text-[#f4f4db] font-bold">French Fries – ₹100</p>
+        <p class="mb-2 text-[#f4f4db] font-bold">Paneer Wrap – ₹140</p>
+        <p class="mb-2 text-[#f4f4db] font-bold">Veg Momos – ₹120</p>
+        <p class="mb-2 text-[#f4f4db] font-bold">Brownie with Ice Cream – ₹150</p>
+      </div>
+      <div class="flex w-1/3 items-center justify-center">
+       
+         <img src="sandwhich.png"  class="h-full w-full object-cover" />
+        </div>
+    </section>
+
+    <section class="m-3 flex items-center justify-between rounded-2xl bg-[#d2b48d] px-12 shadow-lg">
+     <div class="flex w-1/3 items-center justify-start">
+         <img src="muffin.png" class="h-full w-full object-cover" />
+        </div>
+      <div class="w-2/3 text-right m-3">
+        <h3 class="mb-4 text-3xl  text-[#FFFFFF] font-bold">Desserts</h3>
+        <p class="mb-2 text-[#f4f4db] font-bold">Chocolate Muffin – ₹80</p>
+        <p class="mb-2 text-[#f4f4db] font-bold">Red Velvet Cake Slice – ₹120</p>
+        <p class="mb-2 text-[#f4f4db] font-bold">Cheesecake – ₹150</p>
+        <p class="mb-2 text-[#f4f4db] font-bold">Choco Lava Cake – ₹130</p>
+      </div>
+    </section>
+
+</body>
+</html>
+
+<!--CSS-->
+<head>
+  ...
+  <style>
+    @font-face {
+      font-family: "PIXELGAME";
+      src: url("PIXELGAME.otf") format("opentype");
+    }
+    @font-face {
+      font-family: "Orange-Slices";
+      src: url("Orange-Slices.otf") format("opentype");
+    }
+     @font-face {
+      font-family: "ScriptMTBold";
+      src: url("ScriptMTBold.ttf") format("truetype");
+    }
+
+    .font-cafe {
+      font-family: "PIXELGAME";
+    }
+
+    .font-menu {
+      font-family: "Orange-Slices", cursive;
+    }
+
+     .font-cursive {
+      font-family: "ScriptMTBold";
+    }
+  </style>
+</head>
