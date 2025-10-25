@@ -110,8 +110,8 @@
           class="w-full p-4 rounded-lg border-2 border-[#af6e4d] text-lg mb-4"
         />
         <button 
-          onclick="calculateBill()" 
-          class="w-full bg-[#af6e4d] text-[#f4f4db] font-bold py-4 rounded-lg text-xl hover:bg-[#8d5a3d] transition"
+          id="calculateBtn"
+          class="w-full bg-[#af6e4d] text-[#f4f4db] font-bold py-4 rounded-lg text-xl hover:bg-[#8d5a3d] transition cursor-pointer"
         >
           Calculate Bill
         </button>
@@ -122,6 +122,7 @@
           <hr class="border-[#af6e4d] my-4">
           <p class="text-lg font-bold text-[#af6e4d]">Subtotal: ₹<span id="subtotal">0</span></p>
           <p class="text-lg font-bold text-[#af6e4d]">GST (18%): ₹<span id="gst">0</span></p>
+          <p id="pookieRow" class="text-lg font-bold text-green-600 hidden">Pookie Discount (<span id="pookiePercent">0</span>%): -₹<span id="pookieDiscount">0</span></p>
           <hr class="border-[#af6e4d] my-4">
           <p class="text-2xl font-bold text-[#af6e4d]">Total Amount: ₹<span id="total">0</span></p>
         </div>
@@ -166,11 +167,14 @@
         const favouriteItems = [6, 11, 14, 22];
         let favouriteCount = 0;
         
+        // Count unique favourite items
+        const uniqueFavourites = new Set();
         itemNumbers.forEach(num => {
           if (favouriteItems.includes(num)) {
-            favouriteCount++;
+            uniqueFavourites.add(num);
           }
         });
+        favouriteCount = uniqueFavourites.size;
 
         let subtotal = 0;
         let orderListHTML = '<ul class="list-none">';
@@ -219,6 +223,11 @@
           document.getElementById('billDetails').classList.remove('hidden');
         }
       }
+
+      // Add event listener after page loads
+      document.addEventListener('DOMContentLoaded', function() {
+        document.getElementById('calculateBtn').addEventListener('click', calculateBill);
+      });
     </script>
 </body>
 </html>
